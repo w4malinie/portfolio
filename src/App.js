@@ -4,23 +4,23 @@ import {
   createTheme,
   Stack,
   responsiveFontSizes,
-  Divider,
 } from "@mui/material";
 import DrawerAppBar from "./components/DrawerAppBar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Gallery from "../src/components/Gallery";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
   let theme = createTheme({
     palette: {
       mode: "dark",
       primary: {
-        main: "#3f51b5",
+        main: "#EF87C7",
       },
       secondary: {
-        main: "#f50057",
+        main: "#36ACBE",
       },
     },
     typography: {
@@ -67,6 +67,7 @@ function App() {
           <Projects />
           <Gallery />
           <About />
+          <Footer />
         </Stack>
       </ThemeProvider>
     </>
