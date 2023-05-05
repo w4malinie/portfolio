@@ -99,7 +99,7 @@ const itemData = [
         title: 'Grupa Akrobacyjna Zelazny flight suite',
       },
       {
-        img: gaz1,
+        img: gaz4,
         title: 'Grupa Akrobacyjna Zelazny poster Powstanie warszawskie',
       },
       {
@@ -108,7 +108,7 @@ const itemData = [
     },
     {
         img: chinchilla,
-        title: 'chincvhilla space poster',
+        title: 'chinchilla space poster',
     },
     
   ];

@@ -7,11 +7,19 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  maxWidth: { md:'40vw', sm: '95%'},
+  width: {
+
+    sm: '70%',
+    xs: '80%',
+  },
+  pt: 2,
+  pl: 4,
+  pr: 4,
+  pb: 4,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+
 };
 
 export default function BasicModal({isOpen, handleClose, children}) {
