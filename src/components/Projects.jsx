@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Divider, Container, Typography, Grid, Paper, styled } from '@mui/material';
+import {  Divider, Container, Typography, Grid, Paper, styled, Box } from '@mui/material';
 import Card from './Card'
 import binky from '../assets/Binky.png'
 import pawma from '../assets/pawma.png'
@@ -17,12 +17,16 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function SimpleContainer() {
   return (
     <React.Fragment>
-      <Container maxWidth="xl" mt={4}>
-      <Divider  sx={{
-    "&::before, &::after": {
-      borderColor: "#616161",
-    },
-  }} textAlign="left"><Typography  mt={5} mb={4}variant='h2'>UX/UI Projects</Typography></Divider>
+      <Container id='ux/ui' maxWidth="xl" mt={4}>
+      <Box mt={4}mb={6} >
+        <Divider  sx={{
+      "&::before, &::after": {
+        borderColor: "#EF87C7",
+        borderWidth: '1px'
+      },
+    }} textAlign="left"><Typography  variant='h2'>UX/UI Projects</Typography>
+       </Divider>
+      </Box>
       <Grid container spacing={3}>
             <Grid item md={6} sm={12}>
                   <Link to='/binky-app'>

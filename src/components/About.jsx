@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Divider,  Container, Typography, Grid, Stack, Button, Link } from '@mui/material';
+import {  Divider,  Container, Typography, Grid, Stack, Button, Link, Box } from '@mui/material';
 import kkb2 from '../assets/kkb2.jpg'
 import ux from '../assets/google-ux-design-professional-certificate.1.png'
 import front from '../assets/meta-front-end-developer-certificate.png'
@@ -7,16 +7,24 @@ import dm from '../assets/google-digital-marketing-e-commerce-certificate.png'
 import smm from '../assets/image.png'
 import ass from '../assets/meta-certified-digital-marketing-associate.png'
 
+const buttonStyle = {
+  width: '100%',
+  fontWeight: 'bold'
+
+}
 
 export default function About() {
   return (
     <React.Fragment>
       <Container maxWidth="xl">
-      <Divider  sx={{
-    "&::before, &::after": {
-      borderColor: "#616161",
-    },
-  }} textAlign="left"><Typography  mt={8} mb={4}variant='h2'>About Me</Typography></Divider>
+      <Box mt={6}mb={4} >
+        <Divider  sx={{
+      "&::before, &::after": {
+        borderColor: "#EF87C7",
+      },
+    }} textAlign="left"><Typography  variant='h2'>About Me</Typography>
+       </Divider>
+      </Box>
         <Stack   direction='row' sx={{flexWrap: 'wrap'}}
         spacing={{ xs: 2, sm: 2, md: 4 }} alignItems='center' justifyContent='center'>
                 <Link href='https://www.credly.com/badges/9184b194-6d9f-4791-966b-8fc9733b6bf3'><img src={ux} alt='Google UX Design Professional Certificate badge' style={{height: 150}}/></Link>
@@ -37,7 +45,7 @@ Badge' style={{height: 120}}/></Link>
                 <p>I'm an advocate for inclusion. I believe that accessibility means “usability for all”. The one thing I like to remember is that making something accessible for people with a disability also makes it significantly better for everyone else. </p>
                 <p>I’m also an activist in several animal rescue and human-rights organizations.</p>
                 </Typography>
-                <Button variant="outlined" sx={{width: '100%'}}>See resume</Button>
+                <Button variant="outlined" sx={buttonStyle}>See resume</Button>
 
              </Grid>
              <Grid item sx={{ flex: 1, justifyContent: 'center', display: {md: 'flex', }}} >

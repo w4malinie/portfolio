@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {  ImageList , ImageListItem , Divider,  Container, Typography, Grid } from '@mui/material';
+import {  ImageList , ImageListItem , Divider,  Container, Typography, Grid, Box } from '@mui/material';
 import GalleryItem from './GalleryItem'
 import stol from '../assets/tinified/STOL.png'
 import kable from '../assets/tinified/KABLOZERCA.png'
@@ -116,12 +116,15 @@ const itemData = [
 export default function QuiltedImageList() {
   return (
     <Container maxWidth="xl">
-    <Divider  sx={{
-  "&::before, &::after": {
-    borderColor: "#616161",
-  },
-}} textAlign="left"><Typography  mt={8} mb={4}variant='h2'>Graphic Design</Typography></Divider>
-    <ImageList variant="masonry" cols={3} gap={16}>
+      <Box mt={8}mb={6} >
+        <Divider  sx={{
+      "&::before, &::after": {
+        borderColor: "#EF87C7",
+      },
+    }} textAlign="left"><Typography  variant='h2'>Graphic Design</Typography>
+       </Divider>
+      </Box>
+    <ImageList  variant="masonry" cols={3} gap={16}>
         {itemData.map((item) => <GalleryItem item={item} /> )}
       </ImageList>
     </Container >

@@ -71,7 +71,7 @@ function DrawerAppBar(props) {
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
+        <ListItemButton component="a" href="#ux/ui">
           <ListItemText primary="UX/UI" />
         </ListItemButton>
        </ListItem>

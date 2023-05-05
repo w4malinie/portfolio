@@ -38,8 +38,8 @@ function App() {
       },
       h3: {
         fontFamily: "Quattrocento",
-        fontSize: 40,
-        lineHeight: 1.2,
+        fontSize: 42,
+        lineHeight: 1.3,
         fontWeight: "bold",
       },
       h4: {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, ImageListItem, Typography } from '@mui/material';
+import { Box, Button, ImageListItem, Typography } from '@mui/material';
 import BasicModal from './shared/BasicModal'
 
 export default function GalleryItem({item}) {
@@ -13,7 +13,7 @@ export default function GalleryItem({item}) {
             {/* MODAL CONTENT */}
             <Box>
               <Box sx={{display: 'flex', justifyContent: 'flex-end', marginBottom: 2}}>
-                  <Box onClick={() => setIsOpen(false)} sx={{cursor: 'pointer', display: 'inline-block'}}>❌</Box>
+                  <Box onClick={() => setIsOpen(false)} sx={{cursor: 'pointer', display: 'inline-block'}}><Button>x</Button></Box>
               </Box>
               <img
                 src={item.img}
