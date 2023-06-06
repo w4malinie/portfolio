@@ -1,5 +1,6 @@
 import React from 'react'
-import {  Divider,  Container, Typography, Grid, Stack, Box, Button, Link } from '@mui/material';
+import {   Container, Typography, Box, Button} from '@mui/material';
+import { motion as m } from "framer-motion";
 import binky from '../assets/Binky.png'
 import logo from '../assets/binky/binky-logo.png'
 import screens from '../assets/binky/screens.png'
@@ -24,16 +25,21 @@ const buttonStyle = {
 
 function BinkyApp() {
   return (
-    <>
-     <Container  maxWidth='md'>
+    <m.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 1.5 }}
+    >
+     <Container id='binky' maxWidth='md'>
         <Box>
             <img src={binky} alt='Binky App homescreen'/>
+            
         </Box>
-        <Typography variant='h2' sx={{textAlign: 'center', mt: 4, mb: 4}}>
-        Binky App
+        <Typography variant='h1' component='h2'sx={{textAlign: 'center', mt: 4, mb: 6}}>
+        Binky 
         </Typography>
 
-        <Box sx={{display: {sm: 'flex', xs: 'block'}, justifyContent: 'space-around', mb:4, borderTop: '1px solid #EF87C7', borderBottom: '1px solid #EF87C7', pt: 2, pb: 2 }}>
+        <Box sx={{display: {sm: 'flex', xs: 'block'}, justifyContent: 'space-around', mb:4, borderTop: '1px solid #FFB3B5', borderBottom: '1px solid #FFB3B5', pt: 2, pb: 2 }}>
             <Typography variant='h5'>
             Role: <span style={{fontWeight: 'normal'}}>UX/UI Designer</span>
             </Typography>
@@ -221,19 +227,20 @@ function BinkyApp() {
             <img src={mocks} alt='Binky App'/>
         </Box>
         <Typography variant='body1' >
-        <p>The idea for this app was with me for a long time. As a pet owner myself, I struggle with similar pain points as users. Yet, I had to keep in mind UX designers' mantra "you are not a user!". I finally came to understand that phase. Testing and asking questions is crucial, even if something seems obvious to me. 
-        </p>      
+        <p>The idea for this app was with me for a long time. As a pet owner myself, I struggle with similar pain points as users. Yet, I had to keep in mind UX designers' mantra "you are not a user!". I finally came to understand that phase. Testing and asking questions is crucial, even if something seems obvious to me.
+        </p>
         <p>
-           After the last usability study, users shared that the app made finding a pet sitter easier and it could significantly help them to take care of their animals.  
+           After the last usability study, users shared that the app made finding a pet sitter easier and it could significantly help them to take care of their animals.
         </p>
         <p>That means the project's goal was successful. </p>
         </Typography>
-        
+
         <Box sx={{display: 'flex', justifyContent: 'center'}} mt={4}>
             <img src={final} alt='Binky App final screens' style={{width: '65%'}}/>
         </Box>
+        <Button variant='outlined' component="a" href="https://drive.google.com/uc?export=download&id=1uFLzeJVqAWfTZzkm0pA5AcZo8KZZT5gd" sx={buttonStyle}>Download Full Case Study</Button>
      </Container>
-    </>
+    </m.div>
   )
 }
 

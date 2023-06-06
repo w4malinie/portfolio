@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { Link, Button, Typography, Toolbar, ListItemText, ListItemButton, ListItem, List, IconButton, Drawer, Divider, CssBaseline, Box, AppBar   } from '@mui/material';
+import { Link, Toolbar, ListItemText, ListItemButton, ListItem, List, IconButton, Drawer, Divider, CssBaseline, Box, AppBar   } from '@mui/material';
 import MenuIcon from "@mui/icons-material/Menu";
 import logo from '../assets/logo.svg'
+import { HashLink } from 'react-router-hash-link';
 
 const drawerWidth = 280;
 
@@ -20,23 +21,27 @@ function DrawerAppBar(props) {
       <Divider />
       <List>
       <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
-          <ListItemText primary="Home" />
+       <ListItemButton>
+        <HashLink className='hash' smooth to="/#start">
+          Home
+        </HashLink>
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
+        <ListItemButton component="a" href="#ux-ui">
           <ListItemText primary="UX/UI" />
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
+        <ListItemButton component="a" href="#graphics">
           <ListItemText primary="Graphic Design" />
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
-          <ListItemText primary="About" />
+       <ListItemButton>
+        <HashLink className='hash' smooth to="/#about">
+          About
+        </HashLink>
         </ListItemButton>
        </ListItem>
       </List>
@@ -66,23 +71,30 @@ function DrawerAppBar(props) {
           <Box elevation={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
           <List sx={{ margin:0, display:'flex', m: 0, textAlign: 'center'}}>
       <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
+        <ListItemButton component="a" href="/">
           <ListItemText primary="Home" />
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="#ux/ui">
-          <ListItemText primary="UX/UI" />
+       <ListItemButton>
+        <HashLink className='hash' smooth to="/#ux-ui">
+          UX/UI
+        </HashLink>
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="https://www.google.com">
-          <ListItemText primary="Graphics" />
+       <ListItemButton>
+        <HashLink className='hash' smooth to="/#graphics">
+          Graphics
+        </HashLink>
         </ListItemButton>
        </ListItem>
        <ListItem sx={{pr: 0}}>
-        <ListItemButton component="a" href="https://www.google.com">
-          <ListItemText primary="About" />
+        <ListItemButton>
+        <HashLink
+        className='hash' smooth to="/#about">
+          About
+        </HashLink>
         </ListItemButton>
        </ListItem>
       </List>

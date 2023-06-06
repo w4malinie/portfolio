@@ -10,13 +10,15 @@ import DrawerAppBar from "./components/DrawerAppBar";
 import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import BinkyApp from "./pages/BinkyApp";
+import Pawma from "./pages/Pawma";
+import Vinted from "./pages/Vinted";
 
 function App() {
   let theme = createTheme({
     palette: {
       mode: "dark",
       primary: {
-        main: "#EF87C7",
+        main: "#FFB3B5",
       },
       secondary: {
         main: "#36ACBE",
@@ -69,8 +71,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/binky-app" element={<BinkyApp />}></Route>
-          <Route path="/vinted-seearch"></Route>
-          <Route path="/pawma"></Route>
+          <Route path="/vinted-seearch" element={<Vinted />}></Route>
+          <Route path="/pawma" element={<Pawma />}></Route>
         </Routes>
         <Footer />
       </ThemeProvider>

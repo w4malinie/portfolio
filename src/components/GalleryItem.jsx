@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Box, Button, ImageListItem, Typography } from '@mui/material';
+import { Box, Button, ImageListItem } from '@mui/material';
 import BasicModal from './shared/BasicModal'
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function GalleryItem({item}) {
     const [isOpen, setIsOpen] = React.useState(false)
@@ -13,7 +14,7 @@ export default function GalleryItem({item}) {
             {/* MODAL CONTENT */}
             <Box>
               <Box sx={{display: 'flex', justifyContent: 'flex-end', marginBottom: 2}}>
-                  <Box onClick={() => setIsOpen(false)} sx={{cursor: 'pointer', display: 'inline-block'}}><Button>x</Button></Box>
+                  <Box onClick={() => setIsOpen(false)} sx={{cursor: 'pointer', display: 'inline-block'}}><Button><CloseIcon/></Button></Box>
               </Box>
               <img
                 src={item.img}

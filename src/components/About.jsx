@@ -1,5 +1,6 @@
 import React from 'react'
 import {  Divider,  Container, Typography, Grid, Stack, Button, Link, Box } from '@mui/material';
+import { motion as m } from "framer-motion";
 import kkb2 from '../assets/kkb2.jpg'
 import ux from '../assets/google-ux-design-professional-certificate.1.png'
 import front from '../assets/meta-front-end-developer-certificate.png'
@@ -15,12 +16,17 @@ const buttonStyle = {
 
 export default function About() {
   return (
-    <React.Fragment>
-      <Container maxWidth="xl">
+    <m.div
+    initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+    transition={{ duration: 1.5 }}
+  >
+      <Container maxWidth="xl" id='about'>
       <Box mt={6}mb={4} >
         <Divider  sx={{
       "&::before, &::after": {
-        borderColor: "#EF87C7",
+        borderColor: "#FFB3B5",
+        borderWidth: '2px'
       },
     }} textAlign="left"><Typography  variant='h2'>About Me</Typography>
        </Divider>
@@ -54,6 +60,6 @@ Badge' style={{height: 120}}/></Link>
       </Grid>
 
       </Container>
-    </React.Fragment>
+    </m.div>
   );
 }

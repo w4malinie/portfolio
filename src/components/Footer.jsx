@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, Button, Typography, Container, ListItemText, ListItemButton, ListItem, List, IconButton, Drawer, Divider, CssBaseline, Box, AppBar, Stack   } from '@mui/material';
+import { Link, Typography, Container, CssBaseline, Box,  Stack   } from '@mui/material';
+import { motion as m } from "framer-motion";
 import EmailIcon from '@mui/icons-material/Email';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -25,7 +26,11 @@ function Footer() {
     }
 
   return (
-    <>
+    <m.div
+    initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+    transition={{ duration: 1.5 }}
+  >
         <Box sx={style}>
             <CssBaseline />
             <Container maxWidth="xl" >
@@ -39,12 +44,12 @@ function Footer() {
                     </Stack>
                 </Stack>
                 <Box sx={{ display: 'flex', mt: 2, alignItems:'center', justifyContent:'center' }}>
-                    <Typography variant='body2'>&copy; Karolina Krupa-Bartkowiak {getYear()}</Typography>
+                    <Typography variant='body2'>&copy;Karolina Krupa-Bartkowiak {getYear()}</Typography>
                 </Box>
             </Container>
         </Box>
         
-    </>
+    </m.div>
   )
 }
 

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {  ImageList , ImageListItem , Divider,  Container, Typography, Grid, Box } from '@mui/material';
+import {  ImageList , Divider,  Container, Typography,  Box } from '@mui/material';
+import { motion as m } from "framer-motion";
 import GalleryItem from './GalleryItem'
 import stol from '../assets/tinified/STOL.png'
 import kable from '../assets/tinified/KABLOZERCA.png'
@@ -110,16 +111,21 @@ const itemData = [
         img: chinchilla,
         title: 'chinchilla space poster',
     },
-    
   ];
 
 export default function QuiltedImageList() {
   return (
-    <Container maxWidth="xl">
+    <m.div
+    initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+    transition={{ duration: 1.5 }}
+  >
+    <Container maxWidth="xl" id='graphics'>
       <Box mt={8}mb={6} >
         <Divider  sx={{
       "&::before, &::after": {
-        borderColor: "#EF87C7",
+        borderColor: "#FFB3B5",
+        borderWidth: '2px'
       },
     }} textAlign="left"><Typography  variant='h2'>Graphic Design</Typography>
        </Divider>
@@ -128,7 +134,6 @@ export default function QuiltedImageList() {
         {itemData.map((item) => <GalleryItem item={item} /> )}
       </ImageList>
     </Container >
+    </m.div>
   );
 }
-
-  

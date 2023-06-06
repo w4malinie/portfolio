@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import binky from '../assets/Binky.png'
+
 
 export default function ActionAreaCard({ image, alt, title, description }) {
   return (
