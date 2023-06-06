@@ -24,11 +24,11 @@ export default function About() {
       <Container maxWidth="xl" id='about'>
       <Box mt={6}mb={4} >
         <Divider  sx={{
-      "&::before, &::after": {
+        "&::before, &::after": {
         borderColor: "#FFB3B5",
         borderWidth: '2px'
-      },
-    }} textAlign="left"><Typography  variant='h2'>About Me</Typography>
+       },
+      }} textAlign="left"><Typography  variant='h2'>About Me</Typography>
        </Divider>
       </Box>
         <Stack   direction='row' sx={{flexWrap: 'wrap'}}
@@ -51,7 +51,7 @@ Badge' style={{height: 120}}/></Link>
                 <p>I'm an advocate for inclusion. I believe that accessibility means “usability for all”. The one thing I like to remember is that making something accessible for people with a disability also makes it significantly better for everyone else. </p>
                 <p>I’m also an activist in several animal rescue and human-rights organizations.</p>
                 </Typography>
-                <Button variant="outlined" sx={buttonStyle}>See resume</Button>
+                <Button variant="outlined" sx={buttonStyle}  component="a" href="https://drive.google.com/file/d/1gQYnrKsfsHT7Gw051WuVk8jeFuGYIlEJ/view?usp=sharing">See my resume</Button>
 
              </Grid>
              <Grid item sx={{ flex: 1, justifyContent: 'center', display: {md: 'flex', }}} >
