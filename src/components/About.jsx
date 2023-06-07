@@ -50,7 +50,7 @@ Badge' style={{height: 120}}/></Link>
                 <p>I’m passionate about designing and implementing functional and beautiful things accessible to all. </p>
                 <p>I'm an advocate for inclusion. I believe that accessibility means “usability for all”. The one thing I like to remember is that making something accessible for people with a disability also makes it significantly better for everyone else. </p>
                 <p>I’m also an activist in several animal rescue and human-rights organizations.</p>
-                </Typography>
+        </Typography>
                 <Button variant="outlined" sx={buttonStyle}  component="a" href="https://drive.google.com/file/d/1gQYnrKsfsHT7Gw051WuVk8jeFuGYIlEJ/view?usp=sharing">See my resume</Button>
 
              </Grid>
