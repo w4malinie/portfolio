@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Divider,  Container, Typography, Grid, Stack, Button, Link, Box } from '@mui/material';
+import {  Divider,  Container, Typography, Grid, Button, Link, Box } from '@mui/material';
 import { motion as m } from "framer-motion";
 import kkb2 from '../assets/kkb2.jpg'
 import ux from '../assets/google-ux-design-professional-certificate.1.png'
@@ -31,7 +31,7 @@ export default function About() {
       }} textAlign="left"><Typography  variant='h2'>About Me</Typography>
        </Divider>
       </Box>
-        <Stack   direction='row' sx={{flexWrap: 'wrap'}}
+        <Stack direction='row' sx={{flexWrap: 'wrap'}}
         spacing={{ xs: 2, sm: 2, md: 4 }} alignItems='center' justifyContent='center'>
                 <Link href='https://www.credly.com/badges/9184b194-6d9f-4791-966b-8fc9733b6bf3'><img src={ux} alt='Google UX Design Professional Certificate badge' style={{height: 150}}/></Link>
                 <Link href='https://www.credly.com/badges/462f919f-0441-48c9-b786-fc0391a9b85b'><img src={front} alt='Meta Front-End Developer Certificate Badge
@@ -55,7 +55,7 @@ Badge' style={{height: 120}}/></Link>
 
              </Grid>
              <Grid item sx={{ flex: 1, justifyContent: 'center', display: {md: 'flex', }}} >
-               <img src={kkb2}  style={{display: 'block', maxWidth: 480, minWidth: 400, width: '100%'}}/>
+               <img alt="Portrait" src={kkb2}  style={{display: 'block', maxWidth: 480, minWidth: 400, width: '100%'}}/>
         </Grid>
       </Grid>
 

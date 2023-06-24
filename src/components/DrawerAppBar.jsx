@@ -16,7 +16,7 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Link href='/'><img src={logo} style={{height: 
+      <Link href='/'><img src={logo} alt="Logo" style={{height: 
           '48px', marginTop: '8px'}}/></Link>
       <Divider />
       <List>
@@ -55,7 +55,7 @@ function DrawerAppBar(props) {
       <CssBaseline />
       <AppBar component="nav" position='fixed'>
         <Toolbar>
-          <Link href='/' sx={{ flexGrow: 1, display: { sm: 'block' } }}><img src={logo} style={{height: 
+          <Link href='/' sx={{ flexGrow: 1, display: { sm: 'block' } }}><img alt="Logo" src={logo} style={{height: 
           '48px', marginTop: '8px'}}/></Link>
           <IconButton
             color="inherit"
@@ -66,8 +66,6 @@ function DrawerAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          
-          
           <Box elevation={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
           <List sx={{ margin:0, display:'flex', m: 0, textAlign: 'center'}}>
       <ListItem>

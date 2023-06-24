@@ -29,14 +29,11 @@ export default function SimpleContainer() {
                 play
                 style={{ width: 80, height: 80 }}
               />
-               
              </Grid>
              <Grid item sx={{display: {xs: 'none', md: 'flex'}}}>
-               <img src={kkb}  style={{borderRadius:'50%', maxWidth: 480 }}/>
+               <img src={kkb} style={{borderRadius:'50%', maxWidth: 480 }} alt="Portrait" />
              </Grid>
-             
         </Grid>
-        
       </Container>
     </m.div>
   );
