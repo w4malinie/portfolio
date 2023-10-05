@@ -46,7 +46,7 @@ Badge' style={{height: 120}}/></Link>
         <Grid item sx={{ maxWidth: 800 }}>
         <Typography variant='h3' mt={5} mb={1} >An avid learner, natural-born problem solver & unicorn believer</Typography>
             <Typography variant='body1' mt={3} mb={2} >
-                <p>My name is Karolina Krupa-Bartkowiak. I’m a UX/UI designer, graphic designer, and aspiring coder. You can also call me UX unicorn.</p>
+                <p>My name is Karolina Krupa-Bartkowiak. I’m a graphic designer, UX/UI and aspiring  designer coder. You can also call me UX unicorn.</p>
                 <p>I’m passionate about designing and implementing functional and beautiful things accessible to all. </p>
                 <p>I'm an advocate for inclusion. I believe that accessibility means “usability for all”. The one thing I like to remember is that making something accessible for people with a disability also makes it significantly better for everyone else. </p>
                 <p>I’m also an activist in several animal rescue and human-rights organizations.</p>

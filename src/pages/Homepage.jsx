@@ -12,8 +12,8 @@ export default function Homepage() {
     <div>
       <Stack>
           <Hero />
-          <Projects />
           <Gallery />
+          <Projects />
           <About />
       </Stack>
     </div>

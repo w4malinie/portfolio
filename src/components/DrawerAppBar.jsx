@@ -28,15 +28,16 @@ function DrawerAppBar(props) {
         </ListItemButton>
        </ListItem>
        <ListItem>
-        <ListItemButton component="a" href="#ux-ui">
-          <ListItemText primary="UX/UI" />
-        </ListItemButton>
-       </ListItem>
-       <ListItem>
         <ListItemButton component="a" href="#graphics">
           <ListItemText primary="Graphic Design" />
         </ListItemButton>
        </ListItem>
+       <ListItem>
+        <ListItemButton component="a" href="#ux-ui">
+          <ListItemText primary="UX/UI" />
+        </ListItemButton>
+       </ListItem>
+       
        <ListItem>
        <ListItemButton>
         <HashLink className='hash' smooth to="/#about">
@@ -75,18 +76,19 @@ function DrawerAppBar(props) {
        </ListItem>
        <ListItem>
        <ListItemButton>
-        <HashLink className='hash' smooth to="/#ux-ui">
-          UX/UI
-        </HashLink>
-        </ListItemButton>
-       </ListItem>
-       <ListItem>
-       <ListItemButton>
         <HashLink className='hash' smooth to="/#graphics">
           Graphics
         </HashLink>
         </ListItemButton>
        </ListItem>
+       <ListItem>
+       <ListItemButton>
+        <HashLink className='hash' smooth to="/#ux-ui">
+          UX/UI
+        </HashLink>
+        </ListItemButton>
+       </ListItem>
+       
        <ListItem sx={{pr: 0}}>
         <ListItemButton>
         <HashLink
