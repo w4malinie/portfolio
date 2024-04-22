@@ -24,7 +24,7 @@ export default function SimpleContainer() {
         borderColor: "#FFB3B5",
         borderWidth: '2px'
       },
-    }} textAlign="left"><Typography  variant='h2'>UX/UI Projects & webmastering</Typography>
+    }} textAlign="left"><Typography  variant='h2'>UX/UI Projects</Typography>
        </Divider>
        <Box sx={{ maxWidth: 980 }}>
             <Typography variant='body1' mt={3} mb={2} >
