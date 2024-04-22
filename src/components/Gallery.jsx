@@ -27,7 +27,7 @@ import kkblogo from '../assets/tinified/kkblogo.png'
 import acro from '../assets/tinified/acrologo.png'
 
 const buttonStyle = {
-  width: '50%',
+  width: '60%',
   fontWeight: 'bold'
 
 }
@@ -154,7 +154,7 @@ export default function QuiltedImageList() {
     <ImageList  variant="masonry" cols={3} gap={16}>
         {itemData.map((item) => <GalleryItem item={item} /> )}
       </ImageList>
-     <Box sx={{textAlign:"center"}}> <Button variant="outlined" sx={buttonStyle}  component="a" href="https://new.express.adobe.com/published/urn:aaid:sc:EU:3288c5bc-0e14-4baa-b444-319eb7affb3b?promoid=Y69SGM5H&mv=other">View my Social Media Portfolio</Button></Box>
+     <Box sx={{textAlign:"center"}}> <Button variant="outlined" sx={buttonStyle}  component="a" href="https://new.express.adobe.com/published/urn:aaid:sc:EU:3288c5bc-0e14-4baa-b444-319eb7affb3b?promoid=Y69SGM5H&mv=other">Social Media Portfolio</Button></Box>
 
     </Container >
     </m.div>
