@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {  ImageList , Divider,  Container, Typography,  Box } from '@mui/material';
+import {  ImageList , Divider,  Container, Typography, Button, Box } from '@mui/material';
 import { motion as m } from "framer-motion";
 import GalleryItem from './GalleryItem'
 import stol from '../assets/tinified/STOL.png'
@@ -23,6 +23,14 @@ import gaz4 from '../assets/tinified/GAZpowstanie.png'
 import tos from '../assets/tinified/tos.png'
 import chinchilla from '../assets/tinified/KOSMOS.png'
 import kombinezon from '../assets/tinified/zelazny-kombinezon.jpg'
+import kkblogo from '../assets/tinified/kkblogo.png'
+import acro from '../assets/tinified/acrologo.png'
+
+const buttonStyle = {
+  width: '50%',
+  fontWeight: 'bold'
+
+}
 
 const itemData = [
     {
@@ -68,6 +76,10 @@ const itemData = [
       title: 'omnibus logo',
     },
     {
+      img: acro,
+      title: 'AcroYoga Poznan logo',
+    },
+    {
         img: kalendarz ,
         title: 'Grupa Akrobacyjna Zelazny calendar' ,
       },
@@ -100,6 +112,10 @@ const itemData = [
         title: 'Grupa Akrobacyjna Zelazny flight suite',
       },
       {
+        img: kkblogo,
+        title: 'kkb personal logo',
+      },
+      {
         img: gaz4,
         title: 'Grupa Akrobacyjna Zelazny poster Powstanie warszawskie',
       },
@@ -129,10 +145,17 @@ export default function QuiltedImageList() {
       },
     }} textAlign="left"><Typography  variant='h2'>Graphic Design</Typography>
        </Divider>
+       <Box sx={{ maxWidth: 980 }}>
+            <Typography variant='body1' mt={3} mb={2} >
+                <p>Since 2014, I've been crafting graphic designs across diverse fields, from aviation to charitable foundations. My work spans various mediums, including aircraft exteriors, apparel, and web banners. Many of my designed posters, calendars, and publications have been printed in large quantities (some with over 10.000 copies). Additionally, my contributions to charity fundraisers have supported homeless animals. Here are some of my favourite projects.</p>
+        </Typography>
+      </Box>
       </Box>
     <ImageList  variant="masonry" cols={3} gap={16}>
         {itemData.map((item) => <GalleryItem item={item} /> )}
       </ImageList>
+     <Box sx={{textAlign:"center"}}> <Button variant="outlined" sx={buttonStyle}  component="a" href="https://new.express.adobe.com/published/urn:aaid:sc:EU:3288c5bc-0e14-4baa-b444-319eb7affb3b?promoid=Y69SGM5H&mv=other">View my Social Media Portfolio</Button></Box>
+
     </Container >
     </m.div>
   );

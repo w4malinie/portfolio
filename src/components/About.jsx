@@ -1,12 +1,13 @@
 import React from 'react'
 import {  Divider,  Container, Typography, Grid, Button, Link, Stack, Box } from '@mui/material';
 import { motion as m } from "framer-motion";
-import kkb2 from '../assets/kkb2.jpg'
+
 import ux from '../assets/google-ux-design-professional-certificate.1.png'
 import front from '../assets/meta-front-end-developer-certificate.png'
 import dm from '../assets/google-digital-marketing-e-commerce-certificate.png'
 import smm from '../assets/image.png'
 import ass from '../assets/meta-certified-digital-marketing-associate.png'
+import kkb from '../assets/kkb.png'
 
 const buttonStyle = {
   width: '100%',
@@ -22,7 +23,7 @@ export default function About() {
     transition={{ duration: 1.5 }}
   >
       <Container maxWidth="xl" id='about'>
-      <Box mt={6}mb={4} >
+      <Box mt={10}mb={6} >
         <Divider  sx={{
         "&::before, &::after": {
         borderColor: "#FFB3B5",
@@ -42,20 +43,20 @@ export default function About() {
 Badge' style={{height: 120}}/></Link>
         </Stack>
 
-      <Grid container justifyContent='space-between' gap={3}>
+      <Grid container justifyContent='space-between' gap={0}                            >
         <Grid item sx={{ maxWidth: 800 }}>
         <Typography variant='h3' mt={5} mb={1} >An avid learner, natural-born problem solver & unicorn believer</Typography>
             <Typography variant='body1' mt={3} mb={2} >
-                <p>My name is Karolina Krupa-Bartkowiak. I’m a graphic designer, UX/UI and aspiring  designer coder. You can also call me UX unicorn.</p>
-                <p>I’m passionate about designing and implementing functional and beautiful things accessible to all. </p>
-                <p>I'm an advocate for inclusion. I believe that accessibility means “usability for all”. The one thing I like to remember is that making something accessible for people with a disability also makes it significantly better for everyone else. </p>
-                <p>I’m also an activist in several animal rescue and human-rights organizations.</p>
+                <p>A passionate learner, natural problem-solver, and believer in unicorns</p>
+                <p>My name is Karolina. With over 9 years of experience as a graphic designer, I've also delved into UX/UI design and webmastering. I'm deeply interested in social media content design, UX writing, and AI prompt engineering.</p>
+                <p>I'm a strong advocate for inclusion, believing that accessibility equates to "usability for all." I always keep in mind that making something accessible for people with disabilities also enhances the experience for everyone else. </p>
+                <p>Beyond my professional interests, I'm an activist involved with several animal rescue and human rights organisations.</p>
         </Typography>
-                <Button variant="outlined" sx={buttonStyle}  component="a" href="https://drive.google.com/file/d/1gQYnrKsfsHT7Gw051WuVk8jeFuGYIlEJ/view?usp=sharing">See my resume</Button>
+                <Button variant="contained" sx={buttonStyle}  component="a" href="https://drive.google.com/file/d/1gQYnrKsfsHT7Gw051WuVk8jeFuGYIlEJ/view?usp=sharing">View my Resume</Button>
 
              </Grid>
-             <Grid item sx={{ flex: 1, justifyContent: 'center', display: {md: 'flex', }}} >
-               <img alt="Portrait" src={kkb2}  style={{display: 'block', maxWidth: 480, minWidth: 400, width: '100%'}}/>
+             <Grid item sx={{ flex: 1, textAlign: 'center' }} >
+               <img alt="my portrait" src={kkb}  style={{ maxWidth: 480, minWidth:250, width: '100%'}}/>
         </Grid>
       </Grid>
 

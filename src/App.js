@@ -1,10 +1,5 @@
 import "./App.css";
-import {
-  ThemeProvider,
-  createTheme,
-  Stack,
-  responsiveFontSizes,
-} from "@mui/material";
+import { ThemeProvider, createTheme, responsiveFontSizes } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import DrawerAppBar from "./components/DrawerAppBar";
 import Footer from "./components/Footer";
@@ -12,6 +7,7 @@ import Homepage from "./pages/Homepage";
 import BinkyApp from "./pages/BinkyApp";
 import Pawma from "./pages/Pawma";
 import Vinted from "./pages/Vinted";
+import Other from "./pages/Other";
 
 function App() {
   let theme = createTheme({
@@ -59,6 +55,11 @@ function App() {
         fontSize: 20,
         lineHeight: 1.5,
       },
+      body3: {
+        fontFamily: "Quattrocento Sans",
+        fontSize: 18,
+        lineHeight: 1.5,
+      },
     },
   });
 
@@ -73,6 +74,7 @@ function App() {
           <Route path="/binky-app" element={<BinkyApp />}></Route>
           <Route path="/vinted-seearch" element={<Vinted />}></Route>
           <Route path="/pawma" element={<Pawma />}></Route>
+          <Route path="/other" element={<Other />}></Route>
         </Routes>
         <Footer />
       </ThemeProvider>

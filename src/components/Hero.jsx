@@ -4,7 +4,7 @@ import { motion as m } from "framer-motion";
 import Lottie from 'react-lottie-player'
 import scroll from '../assets/108784-arrow-down-white.json'
 
-import kkb from '../assets/kkb.png'
+import rose from '../assets/tinified/rose.png'
 
 
 export default function SimpleContainer() {
@@ -15,13 +15,13 @@ export default function SimpleContainer() {
     transition={{ duration: 1.5 }}
   >
       <Container id='start' maxWidth="xl"  sx={{ height:'100vh', display: { xs: 'block'}  }}>
-        <Grid container sx={{marginTop:1, height: '100%'}} alignItems='center' justifyContent='space-between' gap={3}>
+        <Grid container sx={{marginTop:3, height: '100%', alignItems: 'center', justifyContent: 'center'}}  gap={2}>
             <Grid item sx={{flex:1}}>
                 <Typography variant='h3' mt={4} mb={2} >
                     Hey, I'm Karola
                 </Typography>
                 <Typography variant='h1' >
-                    Graphic designer with a passion for UX/UI & coding.
+                Graphic designer, UX unicorn & webmaster.
                 </Typography>
                 <Lottie
                 loop
@@ -31,7 +31,7 @@ export default function SimpleContainer() {
               />
              </Grid>
              <Grid item sx={{display: {xs: 'none', md: 'flex'}}}>
-               <img src={kkb} style={{borderRadius:'50%', maxWidth: 480 }} alt="Portrait" />
+               <img src={rose} style={{ maxWidth: 400 }} alt="kkb personal logo" />
              </Grid>
         </Grid>
       </Container>

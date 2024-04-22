@@ -90,7 +90,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
             1. Emphatize
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Box mt={4}>
         <img src={em} alt='empathy map card sorting'/>
         </Box>
@@ -117,7 +117,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
             2. Define
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Typography variant='h4' mt={4}>
             Meet the users: personas
         </Typography>
@@ -131,7 +131,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
             3. Ideate
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Typography variant='h4' mt={4}>
             Sitemap
         </Typography>
@@ -156,7 +156,7 @@ function BinkyApp() {
        <Typography textAlign='center' variant='h3' mt={4}>
             4. Prototype + 5. Test
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Typography variant='h4' mt={4}>
             Low fidelity prototype
         </Typography>
@@ -206,7 +206,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
             Takeaways
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Box mt={4}>
         <img src={mobile} alt='pawma on mobile'/>
         </Box>

@@ -78,7 +78,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
             User journey
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Box mt={4}>
             <img src={ujv} alt='vinted user journey'/>
         </Box>
@@ -128,7 +128,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
            UX Problems
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Box mt={4}>
             <img src={problem} alt='inconsistent filters'/>
         </Box>
@@ -160,7 +160,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
             UX Solutions 
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Typography variant='h5' mt={4}>1.Making selling and searching analogous process by enabling users to make multiple choices
         </Typography>
         <Typography variant='body1' >
@@ -198,7 +198,7 @@ function BinkyApp() {
         <Typography textAlign='center' variant='h3' mt={4}>
            Summary
         </Typography>
-        <hr style={{borderColor: '#EF87C7'}}/>
+        <hr style={{borderColor: '#FFB3B5'}}/>
         <Typography variant='body1' >
         <p>My goal was to improve the search experience with a minimal amount of changes. It turned out making the search experience better and less distracting is easier to achieve than I had thought. It boils down to minimizing users’ mental effort and constantly helping them in making decisions. 
         </p> 
