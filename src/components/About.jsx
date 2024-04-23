@@ -45,10 +45,9 @@ Badge' style={{height: 120}}/></Link>
 
       <Grid container justifyContent='space-between' gap={0}                            >
         <Grid item sx={{ maxWidth: 800 }}>
-        <Typography variant='h3' mt={5} mb={1} >An avid learner, natural-born problem solver & unicorn believer</Typography>
+        <Typography variant='h3' mt={5} mb={1} >A passionate learner, natural problem-solver, and believer in unicorns</Typography>
             <Typography variant='body1' mt={3} mb={2} >
-                <p>A passionate learner, natural problem-solver, and believer in unicorns</p>
-                <p>My name is Karolina. With over 9 years of experience as a graphic designer, I've also delved into UX/UI design and webmastering. I'm deeply interested in social media content design, UX writing, and AI prompt engineering.</p>
+                                <p>My name is Karolina. With over 9 years of experience as a graphic designer, I've also delved into UX/UI design and webmastering. I'm deeply interested in social media content design, UX writing, and AI prompt engineering.</p>
                 <p>I'm a strong advocate for inclusion, believing that accessibility equates to "usability for all." I always keep in mind that making something accessible for people with disabilities also enhances the experience for everyone else. </p>
                 <p>Beyond my professional interests, I'm an activist involved with several animal rescue and human rights organisations.</p>
         </Typography>
