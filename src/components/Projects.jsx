@@ -59,8 +59,8 @@ export default function SimpleContainer() {
             </Grid>
             <Grid item md={6} sm={12}>
             <HashLink to='/other#other'>
-                    <Card image={other} alt='other projects' 
-                    title="Other projects: UX/UI, webmastering" 
+                    <Card image={other} alt='webmaster projects' 
+                    title="Webmastering" 
                     description='Here are a few websites I have had the pleasure to work on'
                     />
             </HashLink>

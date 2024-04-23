@@ -20,7 +20,7 @@ function BinkyApp() {
             <img src={other} alt='other projects'/>
         </Box>
         <Typography variant='h1' component='h2'sx={{textAlign: 'center', mt: 4, mb: 6}}>
-        Other projects
+        Webmastering
         </Typography>
 
         <Box sx={{display: {sm: 'flex', xs: 'block'}, justifyContent: 'space-around', mb:4, borderTop: '1px solid #FFB3B5', borderBottom: '1px solid #FFB3B5', pt: 2, pb: 2 }}>
