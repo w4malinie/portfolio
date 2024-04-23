@@ -21,7 +21,7 @@ export default function SimpleContainer() {
                     Hey, I'm Karola
                 </Typography>
                 <Typography variant='h1' >
-                Graphic designer, UX unicorn & webmaster.
+                Graphic designer, UX unicorn & webmaster
                 </Typography>
                 <Lottie
                 loop
