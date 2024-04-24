@@ -75,6 +75,7 @@ function App() {
           <Route path="/vinted-seearch" element={<Vinted />}></Route>
           <Route path="/pawma" element={<Pawma />}></Route>
           <Route path="/other" element={<Other />}></Route>
+          <Route path="*" element={<Homepage />}></Route>
         </Routes>
         <Footer />
       </ThemeProvider>
