@@ -6,6 +6,7 @@ import autoweb from '../assets/tinified/autoweb.png'
 import mkweb from '../assets/tinified/mkweb.png'
 import mechweb from '../assets/tinified/mechweb.png'
 import przeweb from '../assets/tinified/przeweb.png'
+import orlengazelazny from '../assets/tinified/orlengazelazny.png'
 
 
 function BinkyApp() {
@@ -36,7 +37,20 @@ function BinkyApp() {
         <p>Beyond graphic design, I've been immersed in webmastering for years. Whether it's enhancing an existing site or designing a new one from scratch, I'm up for the challenge! I dive into each project with enthusiasm, always eager to learn and adapt. While I've lost count of the websites I've designed or managed, here are a few highlights.
 </p>
         </Typography>
-       
+       {/* PROJECT */}
+       <Typography textAlign='center' variant='h3' mt={4}>
+       ORLEN Grupa Akrobacyjna ZELAZNY 
+        </Typography>
+        <hr style={{borderColor: '#FFB3B5'}}/>
+        <Box mt={4}>
+        <Link href='https://orlengazelazny.pl/'><img src={orlengazelazny} alt='ORLEN Grupa Akrobacyjna ZELAZNY homepage'/> </Link>   
+        </Box>
+        <Typography variant='body1' >
+        <p><Link href='https://orlengazelazny.pl/'> ORLEN Grupa Akrobacyjna ŻELAZNY</Link> is the longest-running civilian aerobatic team in Poland, founded in 1999 out of a passion for aerobatic flying. Since January 2020, as a member of the ORLEN TEAM, the group has continuously raised the bar in aviation performances.</p>
+<p>
+I've collaborated with OGAŻ for many years, primarily as a graphic designer. Recently, I was tasked with designing and developing their new website due to the urgency of not having a functioning site. Drawing on my expertise in coding, UI/UX writing, and digital marketing, I managed to create a dynamic website that captures the spirit of ORLEN Grupa Akrobacyjna ŻELAZNY within just a few weeks.</p> 
+      
+        </Typography>
         {/* PROJECT */}
         <Typography textAlign='center' variant='h3' mt={4}>
         AutoPsychoTerapia
